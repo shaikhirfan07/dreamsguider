@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="/SIM_APP/Content/Images/unipun.png" />
+    <title>Login | Student Profile System | Savitribai Phule Pune University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/SIM_APP/Content/plugins/font-awesome/css/font-awesome.min.css">
+    <link href="/SIM_APP/Content/plugins/ionicons/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="/SIM_APP/Content/dist/css/adminlte.min.css" rel="stylesheet">
+    <link href="/SIM_APP/Content/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/SIM_APP/Content/Scripts/jquery-1.7.1.min.js"></script>
+    <script src="/SIM_APP/Content/Scripts/jquery.validate.min.js"></script>
+    <script src="/SIM_APP/Content/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="/SIM_APP/Content/Scripts/jquery-ui-1.8.20.js"></script>
+    <script src="/SIM_APP/Content/plugins/jquery/jquery.min.js"></script>
+    <script src="/SIM_APP/Content/Custom/popper.min.js"></script>
+    <script src="/SIM_APP/Content/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/SIM_APP/Content/dist/js/adminlte.min.js"></script>
+    <link href="/SIM_APP/Content/Custom/UserDefined.css" rel="stylesheet" />
+    
+
+    <script type="text/javascript">
+        function noBack() { window.history.forward() }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function (evt) { if (evt.persisted) noBack() }
+        window.onunload = function () { void (0) }
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+<body class="hold-transition sidebar-mini" style="font-size:small">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-fixed-top bg-white navbar-light border-bottom elevation-1">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+            </ul>
+            <span class="projetheading ml-2">Student Identity Manager</span>
+        </nav>
+        <!-- /.navbar -->
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-info elevation-4">
+            <!-- Brand Logo -->
+            <a class="brand-link">
+                <img src="/SIM_APP/Content/Images/unipun.png" class="brand-image img-circle elevation-3" />
+                <span class="brand-text font-weight-heavy ml-2" style="color: white; font-size: large" title="Savitribai Phule Pune University">
+                    SPPU
+                </span>
+                
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        
+                        
+                        
+                        <li class="nav-item mt-2">
+                            <a href="https://sps.unipune.ac.in/app/Landing/Home" class="nav-link">
+                                <i class="fa fa-home nav-icon"></i>
+                                <p>Home</p>
+                            </a>
+                        </li>
+                        
+
+
+                        <li class="nav-item mt-3">
+                            <a class="nav-link elevation-2" style="color: #fff; background-color: rgba(255,255,255,.1)">
+                                <i class="fa fa-user-o nav-icon"></i>
+                                <p>
+                                    Student
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/SIM_APP/Account/CreateAccount" class="nav-link">
+                                <i class="fa fa-address-book-o nav-icon"></i>
+                                <p>Create Account</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/SIM_APP/" class="nav-link active">
+                                <i class="fa fa-sign-in nav-icon"></i>
+                                <p>Log In</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mt-4">
+                            <a class="nav-link elevation-2" style="color: #fff; background-color: rgba(255,255,255,.1)">
+                                <i class="nav-icon fa fa-user-o"></i>
+                                <p>
+                                    College
+                                </p>
+                            </a>
+                        </li>
+                        
+
+                       
+
+
+                            <li class="nav-item">
+                                <a href="https://sps.unipune.ac.in/app/College/CollegeLogin/CollegeLogin" class="nav-link">
+                                    <i class="fa fa-sign-in nav-icon"></i>
+                                    <p>Log In</p>
+                                </a>
+                            </li>
+
+                       
+                        <li class="nav-item mt-4">
+                            <a class="nav-link elevation-2" style="color: #fff; background-color: rgba(255,255,255,.1)">
+                                <i class="nav-icon fa fa-user-o"></i>
+                                <p>
+                                    Admin / Support
+                                </p>
+                            </a>
+                        </li>
+
+                            <li class="nav-item">
+                                <a href="https://sps.unipune.ac.in/app/Support/SupportLogin/SupportLogin" class="nav-link">
+                                    <i class="fa fa-sign-in nav-icon"></i>
+                                    <p>Log In</p>
+                                </a>
+                            </li>
+
+
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Contains page content -->
+        <div>
+            
+
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container-fluid mt-4">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <noscript style="color: black; font-weight: bold">Sorry, JavaScript disabled in your browser, Enable it to see this website!</noscript>
+
+<form EncType="multipart/form-data" action="/SIM_APP/" method="post"><input name="__RequestVerificationToken" type="hidden" value="lySLqBne5Mk0XkW01jCLg5eq2uotmWFuPcW4mL7PeAYKfk18Zq-TF_Avk8ercGSJrQVwvjpMILU9PXkBEIFADSZXOA_TpFcavZoz1EGywGIa5X-NbxO1C13XuMqljp6FtulLQKIWmuTXXgfcy-dxHw2" />                        <div class="register-box elevation-2" id="dvLogin" style="display: none">
+                            <div class="card card-info card-outline">
+                                <div class="card-header elevation-1" style="text-align: center">
+                                    <small style="font-size: larger; font-weight: 600">Student Log In</small>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12" id="dvInstruction" style="display: none">
+                                            <div class="alert alert-info-custom" id="englishInstru">
+                                                <i class="fa fa-info-circle mb-2"></i><strong class="ml-2" style="font-size: medium">Instructions</strong> <a onclick="showMarInstru()" href="#" style="font-size: small; color: blue" class="ml-3 float-right">सूचना मराठीमध्ये</a>
+                                                <ul>
+                                                    <li style="font-weight:600">Use previous sessions username and password for login. Do not create new account if you have created account in previous session.</li>
+                                                    <li style="font-weight:600">Only one account per student is allowed.</li>
+                                                </ul>
+                                            </div>
+                                            <div class="alert alert-info-custom" style="display: none" id="marathiInstru">
+                                                <i class="fa fa-info-circle mb-2"></i><strong class="ml-2" style="font-size: medium">सूचना</strong> <a onclick="showEngInstru()" href="#" style="font-size: small; color: blue" class="ml-3 float-right">Instructions in English</a>
+                                                <ul>
+                                                    <li style="font-weight: 500">Login करण्यासाठी मागील सत्रात वापरलेले Username आणि Password वापरा. आपण मागील सत्रात Account/Profile तयार केले असल्यास नवीन Account/Profile तयार करू नका.</li>
+                                                    <li style="font-weight: 500">एका विद्यार्थ्याचे केवळ एकच Account असावे.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Login By <span style="color: red">*</span></label>
+                                        <select class="form-control select2" data-toggle="tooltip" data-val="true" data-val-required="Please select login by option." id="ddlLogin" name="loginBy" title="Select login by option."><option value="">-- Select --</option>
+<option value="email">Email Id</option>
+<option value="mobile">Mobile Number</option>
+</select>
+                                        <span class="field-validation-valid" data-valmsg-for="loginBy" data-valmsg-replace="true" style="color:red;!important"></span>
+                                    </div>
+                                    <div class="form-group" id="dvAadhaarNumber" style="display: none">
+                                        <label class="form-label">Aadhaar Number <span style="color: red">*</span></label>
+                                        <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="Aadhaar number should be 12 digit." data-val-length-max="12" data-val-length-min="10" data-val-regex="Aadhaar number should be numeric only." data-val-regex-pattern="([1-9][0-9]*)" data-val-required="Please enter your aadhaar number." id="txtAadhaarNumber" name="aadhaarNumber" placeholder="Enter Aadhaar Number" title="Enter your aadhaar number which is used at the time of account creation." type="text" value="" />
+                                        <span class="field-validation-valid" data-valmsg-for="aadhaarNumber" data-valmsg-replace="true" style="color:red;!important"></span>
+                                    </div>
+                                    <div class="form-group" id="dvPassportNumber" style="display: none">
+                                        <label class="form-label">Passport Number <span style="color: red">*</span></label>
+                                        <input class="form-control" data-toggle="tooltip" data-val="true" data-val-required="Please enter your passport number." id="txtPassportNumber" name="passportNumber" onchange="InputToUpper(this)" onkeyup="InputToUpper(this)" placeholder="Enter Passport Number" title="Enter your passport number which is used at the time of account creation." type="text" value="" />
+                                        <span class="field-validation-valid" data-valmsg-for="passportNumber" data-valmsg-replace="true" style="color:red;!important"></span>
+                                    </div>
+                                    <div class="form-group" id="dvEmail" style="display: none">
+                                        <label class="form-label">Email Id <span style="color: red">*</span></label>
+                                        <input class="form-control" data-toggle="tooltip" data-val="true" data-val-email="Invalid email address." data-val-required="Please enter your email id." id="txtEmail" name="email" placeholder="Enter Email Id" title="Enter your email id which is used at the time of account creation." type="text" value="" />
+                                        <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true" style="color:red;!important"></span>
+                                    </div>
+                                    <div class="form-group" id="dvMobile" style="display: none">
+                                        <label class="form-label">Mobile Number <span style="color: red">*</span></label>
+                                        <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="Mobile number should be 10 digit." data-val-length-max="10" data-val-length-min="10" data-val-regex="Mobile number should be numeric only." data-val-regex-pattern="([1-9][0-9]*)" data-val-required="Please enter your mobile number." id="txtMobile" name="mobile" placeholder="Enter Mobile Number" title="Enter your mobile number which is used at the time of account creation." type="text" value="" />
+                                        <span class="field-validation-valid" data-valmsg-for="mobile" data-valmsg-replace="true" style="color:red;!important"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Password <span style="color: red">*</span></label>
+                                        <input class="form-control" data-toggle="tooltip" data-val="true" data-val-length="Invalid Password." data-val-length-max="10" data-val-length-min="6" data-val-regex="Invalid Passowrd." data-val-regex-pattern="^[a-zA-Z0-9]*$" data-val-required="Please enter password." id="txtPWD" name="pwdlgn" placeholder="Enter Password" title="Enter password." type="password" />
+                                        <span class="field-validation-valid" data-valmsg-for="pwdlgn" data-valmsg-replace="true" style="color:red;!important"></span>
+                                        <span class="d-block mt-1"><a href="javascript:showpass()" id="aShowPass"><i id="faEye" class="fa fa-eye"><span class="small" style="font-family: Arial">&nbsp;Show Password</span></i></a></span>
+                                    </div>
+
+                                      <div class="form-group" id="dvCaptcha">
+                                            <div class="row">
+                                                <div class="col-md-6" style="overflow-x:auto">
+                                                    <input id="hdOrgCaptchaText" name="orgCaptchaText" type="hidden" value="xDdkLcyI3SWNZ1kBp6rHhQ==" />
+                                                    <input id="hdOrgCaptchaTextImg" name="captchaImageSTR" type="hidden" value="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" />
+                                                    <img id="captcha_img" style="width: auto; height: auto" src="#" />
+                                                    <a class="small mt-1" id="lnkRefCap" href="#">Refresh Captcha</a>
+                                                </div>
+                                                <br />
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Enter captcha text as shown in image <span style="color: red">*</span></label>
+                                                    <input class="form-control" data-toggle="tooltip" data-val="true" data-val-required="Enter captcha text as shown in image." id="CaptchaText" name="captchaText" placeholder="Enter Captcha Text" title="Enter captcha text as shown in image." type="text" value="" />
+                                                    <span class="field-validation-valid" data-valmsg-for="captchaText" data-valmsg-replace="true" style="color:red;!important"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <input class="btn btn-info btn-block elevation-1" type="button" value="" id="btnTP" hidden="hidden" />
+                                                <input class="btn btn-info btn-block elevation-1" type="submit" value="Log In" id="btnLogin" onclick="return CheckCaptcha();"/>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <input class="btn btn-primary btn-block" type="button" value="" id="btnTPC" hidden="hidden" />
+                                                <a href="/SIM_APP/" class="btn btn-info btn-block elevation-1">Cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="text-center">
+                                        <span class="d-block mt-3" style="font-weight:600">Don't remember password?<a href="/SIM_APP/ForgotPassword/ForgotPass"> Forgot Password</a></span>
+                                        <span class="d-block" style="font-weight:600">Don't have an account?<a href="/SIM_APP/Account/CreateAccount"> Create Account</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+</form>                    <div class="modal fade" id="myModalSuccess" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="font-weight: 600; color: green">Success</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body" style="color: green">
+                                    <span id="lblSccMsg"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="myModalError" role="dialog">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" style="font-weight: 600; color: red">Error</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body" style="color: red">
+                                    <span id="lblErrMsg"></span>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+
+    function showMarInstru() {
+        event.preventDefault();
+        $('#englishInstru').hide();
+        $('#marathiInstru').show();
+    }
+    function showEngInstru() {
+        event.preventDefault();
+        $('#englishInstru').show();
+        $('#marathiInstru').hide();
+    }
+
+    function CheckCaptcha() {
+        var capt = $('#CaptchaText').val();
+        if (capt.length == 5) {
+            return true;
+        }
+        else {
+            $('#lblErrMsg').text('Invalid captcha text. Re-enter captcha text as shown in image.');
+            $('#myModalError').modal({ backdrop: "static" });
+            return false;
+        }
+    }
+
+    function showpass() {
+        var clas = $('#faEye').attr('class');
+        if (clas == 'fa fa-eye') {
+            $('#faEye').removeClass('fa-eye').addClass('fa-eye-slash');
+            $('#faEye').html('<span class="small" style="font-family:Arial"> Hide Password</span>');
+        }
+        else {
+            $('#faEye').removeClass('fa-eye-slash').addClass('fa-eye');
+            $('#faEye').html('<span class="small" style="font-family:Arial"> Show Password</span>');
+        }
+
+        var x = document.getElementById("txtPWD");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+
+    function InputToUpper(obj) {
+        if (obj.value != '') {
+            obj.value = obj.value.toUpperCase();
+        }
+    }
+
+    function InputToLower(obj) {
+        if (obj.value != '') {
+            obj.value = obj.value.toLowerCase();
+        }
+    }
+
+    $(document).ready(function () {
+
+        $('#dvInstruction').show();
+        $('#dvLogin').show();
+
+        $('[data-toggle="tooltip"]').tooltip();
+
+        if ('' != '') {
+            $('#lblSccMsg').html('');
+            $('#myModalSuccess').modal({ backdrop: "static" });
+        }
+        if ('' != '') {
+            $('#lblErrMsg').html('');
+            $('#myModalError').modal({ backdrop: "static" });
+        }
+
+        if ('' == '') {
+            $('#dvAadhaarNumber').hide();
+            $('#dvPassportNumber').hide();
+            $('#dvEmail').hide();
+            $('#dvMobile').hide();
+        }
+        else if ('' == 'email') {
+            $('#dvAadhaarNumber').hide();
+            $('#dvPassportNumber').hide();
+            $('#dvEmail').show();
+            $('#dvMobile').hide();
+        }
+        else if ('' == 'mobile') {
+            $('#dvAadhaarNumber').hide();
+            $('#dvPassportNumber').hide();
+            $('#dvEmail').hide();
+            $('#dvMobile').show();
+        }
+        else if ('' == 'aadhaar') {
+            $('#dvAadhaarNumber').show();
+            $('#dvPassportNumber').hide();
+            $('#dvEmail').hide();
+            $('#dvMobile').hide();
+        }
+        else if ('' == 'passport') {
+            $('#dvAadhaarNumber').hide();
+            $('#dvPassportNumber').show();
+            $('#dvEmail').hide();
+            $('#dvMobile').hide();
+        }
+
+        if ('xDdkLcyI3SWNZ1kBp6rHhQ==' != '') {
+            $('#captcha_img').attr('src', 'data:image/jpeg;base64,' + '/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCABGASwDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3W2toGtYSYYySgJJQc8VzfjC8g0PwTd6lHJDa3zWwhtp5It4Er4CZGD/ERyQfer+uabdX3g+9t9KEMepTWbLBI4Aw5Xg5/rVa3bw1bw2Xh3ULrT5b+4iV/stxIGklYjcWCsS3JUn8KAIvB8uo6n4UjXUtPns9RiTyjcXltGDMQOJAisRg+meuaNd8QW3hLw5Z3t3pd1qsjtHC62FqGfJUncVzwOPXqR61oX/h6y1zT7NZJbiB4GSZXtZjGSwHRsfeHPQ1R8O+CrLSdZ1HXTPNc3OpwwCVZsFVKJgkD36+3agDfs4IJbG3kNumXjVjuQZ5Hf3qrpSzT/aFu7C1jijZBBIjh2lUoCSwwNpyTxzUMMjy3kNvBYRmKGNWuJJIwN+5CV2HucjnPrUWmeHNPjs7y5SxKXGqbZblJZD97YF4Kk7eB2NAGvbW0DWsJMMZJQEkoOeK5VrjXrjxZa2elxaHJo8dsDetMGNxHIVbGADjGdn68iultdPtf7Nhi8obTEAWJJbkddx5z75qtZ6DYf2BbWEqSzxLEoLyysZH75Z87ic+9AHP/Dq28RDTdQTxTJFdyLdMLWU2oiZoscEjAGD1GM4z1PFXdM1DVbjxRNpk/hdYtIit0ePVWmQ+a5CnGzGepYdf4eetbMcen6fpEc1wIo4IoQzySnOABkkk8mvm/wAO+PtT134uWdx9rmXSrjUooI7Vp2VRGQyKPK3bTngscHDAcjPIB9IxG0RbaKSBd0iL8xjGMkcZPqcGp7a2ga1hJhjJKAklBzxWXp/huyi1ubXfmee6s4bdo25RQhY5A9Tu/T3NeZ/FH4pP4WMOkaDBaPqSJG13NMit5e9cqqqeWJHJPIGR3YUAelX1jqU0mhPpn2VLdbgPqAkjBaSHy24HHXcV9+nPXN7Sjb3+lwXP2Ty9y42yxgNwcZP1xmvnay+I3j7wm8moa3pLahpc7IyG/tRA2xt20rt+7kKc5DAYHqM+++FNW0vxR4ZsdXsYlaGePo6DcrDhg3uCDQBHb6taHxBDoTaXOZDaLcfazEvlHOflznJPynOBgcZPIrSstNtVH2nyg0k0abg3I4HYduvPrXm3xX1LQ/DNjoHiGW3im1y1lH2OHzCu9Sv7zcoPK9MnB5IHevNNS+NXiW80m/RNNsIbCdWtoLqOJop1JBw6ne3zYGTjODjkZGQD6OmE0Npava6XFeblHmDcqMOOCN3B596s2UMUthbySWqI7RqWV1UkHHfGRXnXhHxNPrHhHw7/AMI4kWtTRyi31V73CTRgRsdzcnGWAwctn3JOO5lht7nSoJra2F3JG0bhIJFUsRjgknGPUHrQBftraBrWEmGMkoCSUHPFNtIbaW0iYRQvlBkhQecc1C8thYaKdQvVhiggt/OmkdR8qhckmvOvhh8QtM8Z69qWnWfh6OyjjjNyZpLoO8x3Bc+Xt+XOcnBIB69QaAO8uNImvFsZra9+yiNMvGIEYSkqQNxI6ZIPrwOnOa+l6nZzaPautpc3bg/Z5JBZMpMi/KzEEcAkHnpWzbW0DWsJMMZJQEkoOeK8xk+Nvguxae3ubK+E1pL9nl/cRElhkEgb8kfKecemcZFAHptrbwPaQs1vHuMak5UZ6VC72NjpS3l2kaxJGrO5jz6e1eUv8ZvC0t3pk8F1HFYwnbepPYs0rFlONmH6ZBydrY49Rne8I+I/+E08UzXGkXFnc+GrezSO4iltisq3BJ9RyCO/P3e3OQDvoLeH7HG32eN28sH7oyTim2MMUthbySWio7RglXVSRx3IyK5XxDH4ok1PQLPQbOzXTboEajeyRhpIAADxyOozg4POPx29D0h9Ps5nvtQe/Er+ajXEUa+ShH3QVUZA9TQBftre0ns0BiifKBXwBnOOc+9U9M0G0tnW7DTSs8CoI5X3Ig6nA9Se5yafpGg6Tp1vJJZ6fbxPdt587KgzJIw5Y+5rK8Qy6pZWOjPo8GmFp7yGG5N4jcxt127f4s9zQBe0u3aCV0ntZZLd1EguZ3iK5IHygDBA69fSizls01HyJ7u1d5o4/Jtti7lODuOe+cfpVXxH4TsPGPhKTR55Wt1mEZaa3xvBUhvx6d6b4U8G2Hhw38ttmSLUHW5YTEuwkI+ckn1OKALs1rFeSWFtDe/ZbiNRcSIkSMZk2lcHcDxuIOR3AqXQdIj0/QrO1mla8lSMF7idQXkJ5JP51Zt7CzZYblrWEzeSF8woM4OCR+dSW1tA1rCTDGSUBJKDnigDgbnx5/wj2pW9l4k0CK2jvLmO3097e4SaWdWJHmMnBVfu56nLY5rstI0wW9vK05Sczyeau5PuKVX5f0P51zj2mg+NrZYrS/0+LXdNbi4tRFPLandg8MCASF544PuK620tYfsUG+NHby1y7IMscdTxQBBZzaZLMLEPavexwJLJD8pdVboxHXBINT21rE0MLGKIqY1yDGM59c0ltZWhhjmNrD5rRqGfyxuIx3P4n86fbW0DWsJMMZJQEkoOeKAGwQRGC3zbI25AWbaOOO9Mjg/0eEx2ls+Y1JZzg5x/umqM97oenTaamo39na3F0oSCGaRFMzHHQHknJH4kevOhBHaC2h8xIQxjUncBk8UAPtraBrWEmGMkoCSUHPFYGq614U0K40f+2Xsob68Kw2rPCGkyRjOQCVXJwT055rftraBrWEmGMkoCSUHPFchpHh/UdY1eefxbo2hzWlnKJNHlijJlUZ6vnvgIfqPpQBa8U+JNP8FeH4dWu9La4tSB5zQRqWDEDBOfUkDJP9AZrLVxqek6BfaZp0T2+oxiR5LldhiTZu5AB5OMenvyK0LB9N1VZrb7Pva1KxXCy2xCuSgbqwwwwRyKvW9vb/Y4maGL/VgklR6UAYdjbQaxqun6rZX0UlnbW7xTwKp+d2CkE84/ME8DBGWzQ8ZeI7rwl4etdQtPDbaw0sscRjh6qCpJZsKT1GBx1PPoeqghthaQvJHCMovLKOSRVS/Mln4cmvLLTEvryK23xW4wplcLwufegB8SwTafCiiCC7mgVkEqKzKSOpXPOPr2qK1heGxgjvI4pt0RMl2I1RVJxgFc5zz1HpWHpHw+0qLxbL4vk86S8u7eP9xMQywnYAcducD1wRwa27m3tobez1K4mht7Wzjaa5ZxhWXyzyx6YHXn0oA8f+LHia8tvDI8JLpzPqF5JDGt00cameNhn92oZmJyApYj17kVxPiXw+ngr4g+HULLO4Njdz3Mz/vZJGkcudu45BKnJ5xhRnnnqPh75XxI+L99r93FE1npwWS1R+GAXKxjbnGOd7cHDAc881P2grQW+q6Hfxwwq0loieZuw4Ksx4XPI+bk4OMLyM8gH0LBHb+Xbo1qGZ4wS/l5HTufWvmTwrbJ4h+PbefbwyxDVZXJlbLARrKVG0nkfIMnBwQvIzg/QPhDQINOsridtRudR/tCQXii7YOYVcZCr6LXzJ/ZWt6n8TNa0nRhFHf3mozwCWSUI6xsZC2OfulQSSATwAD82CAfSWqt4U8T6RJ4Yn1LT3ur+DyvLilR5UbbkNtByCCMjPcVzejaTF8HvB2ratrGqTa3ZzSpcBBZ4lWRyFPzFznJK5Jx09TiuJ1v9n3Uo9Ce/wBN1ldS1Nj58gniaN34JIU7jkknnd1IHI5zv/BfxwniO3v/AA9rjxXj2o3W1xdIgknh5yHUk5IxknnryemQDzj4q67D4q8R6a9pbhLX7HaCMynZLmQM5+XPOdwBOD91eeefo278PaPrvha206TTrXULOQIjl25UDhnDDneDnnIOc818+fE6FF+LUUkiW628r2DCXfztKAHAzypIOTg4wORnn2/xVrLeBvClldab4bm1hpJ1Ro48krvyxYnax5PA46kewIB4r8M5Y/D/AMZ7qwvkFws13LYmeeT94WJcqSufmDFRkkHB28jPP0rYWFhHaq0NpbKzgNIUjUFmxyT6mvlv4k2K2XxPadM2q3bWdx5kcm2eAumG2gHrkEk4OCF5GefY9LtvDHwu8O6uLvXWvb6RP7SmjuZkNw5IAG0Hn5m4yR1PNAHKfHbxVHBo9n4YsWhSWcRy38gIDKhBKLgfMclSxwOML/eGeb+BhB+JuoozpdGWGVBczn94x3bs7dxznbknnBA5Gedf4WeG9K8aazrfiLxSltdpeyOLOK6Ox5FXG9wobhVDIvGcHvxzjfDLZH8driJ1ilV727j8yR/nPyynhc8g7ck4OCByM8gH0nYWiDT7cTpDLL5a75BEF3HHXHNfKGgeHbLxf8TtS06+M/2abUZCZYGHnDMjcYJ+6c5ZsHGByM4P1lb29v8AZIneGL/VgklR6V8jaL4pufC/jvWNWsNOt9SuZLqWGIXBJfLs2PkBy2cc46HHIzyAezv+z/4Qu4Gubi+1nzZsSyTG6QkHBLclD1JyScngcjnPU+Bfh7p3g6K+lgu7q+fUWSaVrza7BhnnIAyTu5zXgGq/FPxY8OpWGq21pLp8zCB7e5tBbyhGU8AK28Ergk5bHy888/QPw/8AFug+NtC8/TYSslriGeG4UeYpxwTycg4657H0oA3bOOd7vy5dPthYi3jaO43gu8hzuBXHAAxznvWXrvhS38Y+DZNIv91mbhVJktyNw2tlT05zgZHv+NcvqHiTWfDHjyzXWrTTF8KaiqQQ3bOFaB9mdzljjk5zxjG3nPXqNO1q0n/tOLVLGOwtrOeK1jubghVufMRCCpOOSz44J7UAaWgaXa2OgWNorm78mFUaech3cgclj65pypG7WkKW1u52LJKZE5246qcYJzXKNoUngTwrNP4R8PnWLq6nFxcRXN2S7FhywLA7jwOMg9+a2/CGpv4g0Rbu70OTT3EkkWy4UbjsYqCfrjPcdeT1oAl8OeFNI0KC6lsrc79QmN3cGVy+ZGHOM9BWlZLZ3FspRYJGQBZMAEhsAkH35qS2toGtYSYYySgJJQc8VHY6fZxWyslrCrSgSOQg+ZiBkn3oAz9P0SdNSe/l1J57WaJNlm8Ee2IhecMBk5PPOT7+qySNd6BeNokVpLqUEbRRi4QhPOCggN3I5HStO2toGtYSYYySgJJQc8VCtlBNpvlokUcssP3wgyCVxuoAr6Hpyx6Vby3lnZLfSxq1w8MAXe3qevP4nvyaqXMOtf2rog0600x9KZWOovOD5w+UbdmOOvrn8K0tK0+ODSrWOYi4kESBpJFGWO0ZNSJDGunLItrHLIItwXaMscdM+9AGX9s0K0ubM3eqWsU9ztt4reWVFDyAAkAHkt8y/mPXnXtraBrWEmGMkoCSUHPFed+NvBUF/wCF7fW9K8Ppe6/bOl3BDLIVyzbN4ZQwDY2g7c9R7kHt9FDTeH7K51K0hguWgVplKAbTjvycfTJx0yetAGWPDXhvXruLV77QY5b6wYRpNLF8zFQGBA/iGTxkdah8LeK7LxFpBul0DU7by5DCVubLDMQAd3GeOfzBrpra3ga1hYwxklFJO0c8UW8Nt9lhLxRbiik5UZPFAHK+ENB0/TdY1kjxDPq13OY5ZrO5nWQ2e4FgAv8ACCD6DgCurtraBrWEmGMkoCSUHPFcvceGrfRrLW/EWgaXHceIL20VgkpJWSRU+UBc4Ge+MZNdDpy2t3p8RMcLSKirMFAyr7QSDjODz60AYurX0gez0XSRaRavd25mimuoRJEAm3cGUMGJIJ5GQDjOMjLNY8OX+r+C9W083FrNcXtk0dviDyQjlTjLZYkdKum20Tw14fuNUmiSKGGEzzTSBpmHALHnJOcDgdcVe0+3juNEtmLRSSSwKROsIXOV4bBz+tAFDwxp13J4Zs4vENrZTXiDGVjyGUH5GYEt8+ME8nnPNbFtbQNawkwxklASSg54rgrTxDpvh7xDNDr3ivT7qK8eC1tLIW6+bby7Bu3lefmJBJPAyOld7bW0DWsJMMZJQEkoOeKAG28NqYIA0cPmNGDgqMnjk1594jtNa1Pxfp+hQ32kx6NqOmuJ7aWMGdvkcMQMZIyyHOeNvbJ3bmn/AA+0ZtT07X76OS61i1jIS4aVgCpLkArnHR8fhUp8DaVfXuj6xcAnUrORZTcqiq0yhXARsDGBv+vFAHh0vwE8S3GozxHVNKl87E8d5cTOJZM5JBUZ6k5JOfu8Hrnm/H3w713wbYQ3+q3tnfw3twRFOs0hmHBb5lbA+bOT97BA59fqDTdJlk1ae7vo9JntxHGLXZaYniO35t7knPXjAHWuU+K3ge/8Z+DdOtdGgtzexXKTMZGCZTy2B5+pWgDnfgv4Q12x1a48QapsvNN1OxDW9zNLvmOWDLuXJAyCSeTgjAPXPH+P4ZfBXxes/EJt4vsk8treB93zFdu2VAuec7WJODjK8jPPuPguwubfwBYxSC3ur+ON1Es7BhKQ7YZmXdyRgnk4Oa4zxF4K1fxp4QNp4kt7aHVYrljpd1p9uxXyyBjzhlsBu+CcYB7cgHqlpDbS2UEgiicPGrBtoOcjrXzJ4LWCX49zRwwwzW0up3Mb+cwZmUpNkbSfmU4znBxheRnmQN8WfC2m3mlW9hqVxbXEw8q5a2FxMN245QqWxuHJ5ODjkE89R8MvhDcXH9oaz4nF3E90f9EcyvDdj5iWkYhjtLDqCSeTzg8gGJ+0FpaW2o6NqMVtEizWiRNIPlO5S7YAzg53cnBIwvIzz7d4Kvptc8O21/d2FskMsUbW0oYM8yFASzrj5GznIyfrWN4x8KWfjvwrd+HoAIdQs0gnhuJVyPMKnGT1ORuBPvnnFeE6f4x8Q+Ctaii1qO/urfTbl2it7i48iSXeG++Pm8xCfmJ+bBxhhnkAh+IWrQeIPiPPLZW2EhuLe0zJ8shdMq21M8qWB5xnhemcHuv2hp5IdN0G1it7ZIZlMkswwJXYDheuSvJJ4POORxnjdF06bx14m1jxVqkn2HRbWQz3GpKDHJEFQhFiUEgvgKccn5Rzz83t2m21lpmlaZpF3o2q+JrZ03tq8sUdxtL5baed+BgDp3HrQB4dB8RNPt9b07VRoUlxBpkQtRHJfhTcBhJud0KtkuWLP97kL8w749n4ms7b4gyeKfsG+0XU/tQi80LLglyFAzgg/wAXBxgDIzz9Q3OgeH5LvTUm8E2d+LwEy3hsYGWE4zmTd83PqAea+fdd0azb43PpklpAbW51K1RgXCt+9QEgDuCWyTtOCB64IB7n4e1LSvir4A1BYbaaygn8yxZyF8wfKPm44/iHFT23ww8Ki6s9Xh0/ytUiXeLoSMS0jKcu4Jwxyc5I61f8GeH4dK8PmKbTYoZZ5pJpAziVpSx4djgfMQBkc/U18+WF/f8Aww+KkkmsK8tg1x+8klkLvJbS7iHVSfm7MTg4ZAMjOCAe6jw3pzeBv7E1m2l1WQWiLNdmz3ySuw2hweSXHHOcjA5rw74Q3k2l/Fp7G5YzLczy2s8lwcSswEjAlCx6svJwcHHIzz7DefFjwHp3hxNRXUra8kKALbQJmZmx0KnBXp1bAryH4K6NP4i+JVxqzILi1s3knnuZsrITIsiqNoY8sWLHrjZ19QD3Pxf4c8Na54cs08Q2cstuk0RRrZHLh2wo+4M4O7nt+lQ6lpesajHCklpocGj2sscrm7ia4eeNArbhgrsYENwc9Bz63LTTtJ8E+Fb3UZWvruCKJryY3ErXMnC5IXceOnt7mmeBNYsvFfgm31Rot6SGVHM8KqSFdhyBkdMdCaANDS9a8PahNHYW99YTX4gSVrYOplClQclevQg/iKreJ9P1m78GzR+GXtbfWHjTypZo1I6jdyQQCRnBIP4dRr2Wnaf5MNylnbmV4VBl8sbmGB1bqaz86qNWsYINFsZdKeENPePcbZEbB4Eeznt379qALOh2kkeiWEWptBcX3kL5soiVDIQBltozg9M44yau21tA1rCTDGSUBJKDniuB8V+CdGudQtPFd14hfQ7q1tkVbnegVAA3QP8ALzvwRg5wuMc57PQ7a3bQbBjPHf7rdD9rKofOyB83yjHPtQA+xOn3a7IngkmttqTom0lWKBsMOxwQfxqlapHdLeSjR5Ibq3iEMU8iJ+/BQNlDk8buPmHUU238JaQbLUtkMkUmrBXuZYpCr7tgXKkcqcDPHcmuE0DXtZ0I+LrzXHXW7DTJ4ora1sbXfOm7BHUDI2Mm4ktyCc9cgG58PZfFlxNqFp4n0qFLO2CCyvHRBLcDnlgpIJxtJxjBJHPbeXRJtSNhPdS/Zvsd358a2xwJ4/LKhZPXliT9BV7RZbbVNDsb8WTQi4gSTy7iILIuRnDDsaytUn1bTvCl/eWejw3+oqMWUESA7wQApfJGcEknB6DigDftraBrWEmGMkoCSUHPFZ1xc6ZCtjYXNqss18myNDbl1chc/MQCAOOSeOnqKb4Xg1GTw/bPr1tZi/Od3kx4BTJ2kjJw23GQCRnPNaCW9udPVmWOMmIZkKr8vHXkY/OgCjobXFxppk1XSoLJ0JCnzFcPH2ckdCR1B6epp1nNod9YW1ysmnzrJErLJlG3AjOc0aFa2sugW0Uk8eossfly3Eka5kYcNkAYpbXw7on2SEtpNi7FFJZ4FZmOOpJGSfc0AW7K1j+wwebHFJJ5Y3N5YGTis3SoLWxn+yzrHJPeu1zHtt8ALtXIJxyeOvuPUZl1Tz7XwzPc6bY2tzqK2263imIVZJMcAn3PuM+o61U8GPqeoeGbe41/TILa+LMNojCl0B+RmXLbWIwSNx+vYAFrVLK4n8OMunf2dFdtEuJL2DzIscbtwBHbNQ6Hp9lp+yO7vIrjU7+MTujOcNtVVYxRsxKryuQCeTVfXvA2i+L9OtYtUS52LGMrBcNGr5APzKDhuQDyO1FhpPheHVtLhL2761Z2JEMctxvnMTY3Myk5bJH3iD3oAXWNL8Orp0erajolvfXVjEbuJI7dXnZlUH5R1ZvlH5D0rmdd17UtS+HFl4j8P2kGnGCYTXI1iMxHyo85yF5YEgcA8g8c1103h/w950HiG+02zN5aW+4XciqCihSSSTgdzyelYvheTT/iBoTX2o6KotFlkit/M2Ms0RTaSdjMCc7gfQjigDd8Mapo/iXw/a6nprQ3MEi7S/lbTuHDAgjIOaq+J31ax8GzXXhzSra+1ZY0MUUqjByRuOMjJAycZH49DHc2p8LeC2fw/oA1O5jAkS18wBpWdsuxdskn5ie5NaWnxT3Ojw3f2OOK4mt1YW1yq/I+P4iufx60Ac18PPAkOg/bdbuXuJL/AFkJNPBPgiFuWIAyect3LY6ZPJPUXunzXfh6aHT5YbS+lttsNy0Ify3K8MQevNW7a2ga0hLQxFiiknYOTiqtvHI15Ahs4DZm1DtKVG7zMjj8smgCpbW13pXg5GNvHrGqQWm7CxpCbqQLn6KSapeCvEmn+KNMbdDaQ6hbsyXFoJY5JIwGKqzhSdpOM47HIya6O2toGtYSYYySgJJQc8VTEOl6bp5vpLSCPcqtK6QAs5PrgZJyaALFvHbPaLsihkkWMbgFUnOO/wD9eua0S51zUfCl/MuleRqqKy2a6lbpEsjbRtJ2O2Vz3yP61saP4Z0TTXmvrPS7aG6vQHuJVQbpG65P4kmtG2toGtYSYYySgJJQc8UAUdOjMHh+G61O3t2uktw87RRAbsDPTJ5x2yee5rN1nw1Y+NvBcVozyWguoopkuIkXzUPysOf0OK1NJaO+tpfOsFj8qTygXUHzAFB3dOhzVy2toDawkwRklFySg9KAMNfBmjaj4Y0/S9Xtl1NbeJMTXShpGfbjeT3PJ61zs/w/1+7Giyx+MbphbXa3MxeFULx4H7sCParDg/fDdeMchu+traBrWEmGMkoCSUHPFFtbQNawkwxklASSg54oAoWqRxtdSytHcIkETC3jhDSR/Kc9OSW7fSuN1n4f6N4z0xNf0aNLDX2kili1GVHJV4io5TO08Jjoa0Nf8Lau1jqWqeFr1IdZvre2jRbgKYk2MdzAEEbirYyQenvW+lrbw6bZWJs0le6jKu6ptXcVLMx7jPPryaALC6Za3eiwxXkQmzEhkZAULkAHPy88ntmuQ8SWngzWPDl5a3Wn2msahptoJPsUcuLsEruChs7wT+P0PSujmM0Phm6/snTVudQtbXFvHcpgTSBMr8x+9k989e461l+ExDqOmWL+JtK0y316cO8cTwxrNLEjYWTbliDjaSAxxnrQB4zpnw68Na1ptxrGq3Os6NDLmbz9UCoM7mUfvW67yQfukjGNxzlvTvhxous6dKgNnoUvh64tVnW+gLPc3MzAEu7FmySS2eSBwAa7+OxtLmwjSe1glV413K8YYNx3zTrW1tzaQkwRZKL/AAD0oALe1t3tIt0ETboxnKA54pLS0thZw4t4hlAT8g6nk062toGtYSYYySgJJQc8Vga94ZttZ0yC4QXH220i8yGOG+e2SVsZCyFcjBI6kH+dAG9a29u9pC3kxNujU52g54qro2j2mn6csaCSbzGaZmuHMjZY7iAW5xzwO1c/4ButPufCdjarc295NGz25minW5YsuW3SOBgMRyRyBkDJrorDTI4tJjhMjyyNH/rpVVnBI69McfSgClrHhLRPFOhLY6rYRyxyRr86jbIp4OVYcjkfj3rm47HxYt5JoOnWNhaaOdLP2bVWzNKk5J2l9xyzdzweTnParPgfW5/EGq61CX0260vT2jtYpY4mWcyqv7zzNwAPOeV4+tTaNo3iLTZJrm+1KHVo7u7j8mA2qRi1tySTyOWbBA5z070AWJ7CTxJ4eW0sbxrO7tbqBZrkRAGQxlHfgdmGf/1Vs6Xpwit2e4+zTNKQ4K24QgYHBOTuPvU9pBaNbpiKEttUvhRnOB196jsBaXCMq+RI0YVXUIMo20Hk9+tAFG/uZbCHTGg0hLuGZsXUu5V+zxiNm3nPXkAfjVDwFrknizw//adzoYsIWkItWdlc3EWBiQgfdPYjnkda6G2toJbZVktYypjXLMqnfkc/5NMs9Ns0sLZFtowqKrDjnOOpPf8AHrQBU1GSey0e3nsNIXULhnhRogVU7WZQz5I7Ak/hWY8evXmpadFDpGl/2MXdL9robpZE2jYyDpySeDnp2rUeFdU8OzLpVxBDdvC0cV15IkEUuMZIPXB7Go/C+k3lj4etoNZvYtTvQCWuvs6xllJyoIHcDAzQBp21tAbWEmCMkouSUHpWZc2uoutu1hHZ+WYV3eaoyW79vpVbQtbg1W4ls20aeCW3kMUjTLHyAuRJwxO1u1bEf2GO3hEywhzGp+ZRk8UAOjsbO4s4RPaQSjarYeMNz6896db2sD2kRaGMloxk7RnpRRQBX0vSbGzs1EUGfMAdzIxkJJHXLE1yGoXujad4y8OW15piLreqBo4by3iRh5Kc7XLcjOecA/WiigCO30vWtW8Z6tpWsSadc+GLrT022wjKyqGUD7wAwSSxJyei4x26vw54c0zQtEgs7SAshzK7zN5ju7nczMx5JJNFFAGV4W0C68O6fq93q2pPqi3Fw95CJEyYYyM7Bk/oMD6VU+G3jSz8faXe3KaULX7HceSN5DGRcZVjxwcdRz9TRRQB01no1mt1/aO2RppreONkZyYwFychOgJzyfardtbQNawkwxklASSg54oooALa2ga1hJhjJKAklBzxXNeLfAmmeOfDEGnXjyW7KyTRzwgblYDHI6HIJ6+tFFAG3oulx2WiWNtK5u5IoEVp5lBeQ46njrT5LR5NIP2NLVLxoP3Uk8W9A+OCwBBIz70UUAZ+maE1zptk+uG3ur6HLLLao8KEZyuV3HJwBnJNZ/h2DWW8V64NRns5tJEdubKFYgHiJT5snHOT6k/h0oooA6GP7MlrbFrdGLlUzsHUjrT7GK2n0+3mECfPErfMgzyKKKAMvXdO+3+FJrK2l+yXd7B5EVyifNG7LgNng/iOaq6Nq8EviSXwzJaLJLZabb3L3bAZlZsg5GPYHOe5oooA6G2toGtYSYYySgJJQc8VWh0jTppbTUJLG3e7ih2JMYxuVWwWGffAoooAlWwtbrTljmgQrJEA2BgnI9RzWPqVw+i6dpIstOtbnz54oJDcTMpVWHLA7WLH6/nRRQBNrN0+l+Fn1GzsLW5njjRhHO/lqc4BywVj39Ks6Ra2d1psF81lAJbuBGkO0HcMcZ/A/r3oooANG0DSdLsz9i0+3hNw3nzMEyZHI5Yk8k1dtraBrWEmGMkoCSUHPFFFADLOxtEtUZbWBWdQ7kRgbmI5J9TRYxW0+n28wgT54lb5kGeRRRQBi+HPBGhaDd32p2Vs/wBq1MiW5aWQuC3LcA9OWJo8T+HbnxD4Om07TL/+zL2eNCt1GvIwQSCRggEcZB7/AIUUUAYnie/vvAfwkF/E0GpajZwQxtc3cf8ArCzKpcgHJPPc/Unv0nhi7i1fwjpmqzW8W64tUmOIwM5Gc4ycE9cZOOmT1oooA5aXxhZaj8N9T1iKxlia2hkKhWVXbYMg7sHbnHPXGe9avhiyttfbT/GCT3SRXVgiLYu37ocn5ioONxyM9TwMHGclFAHUW1tA1rCTDGSUBJKDnii2toGtYSYYySgJJQc8UUUAf//Z');
+        }
+
+        $('#CaptchaText').keyup(function () {
+            var captxt = $('#CaptchaText').val();
+            if (captxt.length > 4) {
+                var captxt = $('#CaptchaText').val();
+                var hdcapt = $('#hdOrgCaptchaText').val();
+                var flag = 0;
+                if (captxt != '' && hdcapt != '') {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/SIM_APP/Login/VALCHCT',
+                        dataType: 'json',
+                        data: {
+                            ctxt: captxt,
+                            hct: hdcapt
+                        },
+                        success: function (msges) {
+                            if (jQuery.isEmptyObject(msges)) {
+                                $('#lblErrMsg').text('Invalid captcha text. Re-enter captcha text as shown in image.');
+                                $('#myModalError').modal({ backdrop: "static" });
+                                $('#CaptchaText').val('');
+                                $('#CaptchaText').focus();
+                            }
+                            else {
+                                if (msges == '1') {
+                                }
+                                else {
+                                    $('#lblErrMsg').text('Invalid captcha text. Re-enter captcha text as shown in image.');
+                                    $('#myModalError').modal({ backdrop: "static" });
+                                    $('#CaptchaText').val('');
+                                    $('#CaptchaText').focus();
+                                }
+                            }
+                        },
+                        error: function (ex) {
+                            $('#lblErrMsg').text('Captcha Validation Failed. ' + ex);
+                            $('#myModalError').modal({ backdrop: "static" });
+                            $('#CaptchaText').val('');
+                            $('#CaptchaText').focus();
+                        }
+                    });
+                }
+                else {
+                    $('#lblErrMsg').text('Enter captcha text as shown in image.');
+                    $('#myModalError').modal({ backdrop: "static" });
+                    $('#CaptchaText').val('');
+                    $('#CaptchaText').focus();
+                }
+            }
+         });
+
+        $('#lnkRefCap').click(function (event) {
+            event.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: '/SIM_APP/Login/RFCTLN',
+                dataType: 'json',
+                data: {
+                },
+                success: function (objLog) {
+                    if (jQuery.isEmptyObject(objLog)) {
+                    }
+                    else {
+                        if (objLog.orgCaptchaText != '') {
+                            $('#captcha_img').attr('src', 'data:image/jpeg;base64,' + objLog.captchaImageSTR);
+                            $('#hdOrgCaptchaTextImg').val(objLog.captchaImageSTR);
+                            $('#hdOrgCaptchaText').val(objLog.orgCaptchaText);
+                            $('#CaptchaText').val('');
+                        }
+                        else {
+                        }
+                    }
+                },
+                error: function (ex) {
+                    $('#lblErrMsg').text('Refresh Captcha Failed. Try Again. ' + ex);
+                    $('#myModalError').modal({ backdrop: "static" });
+                }
+            });
+        });
+
+        $('#ddlLogin').change(function () {
+            var nationality = $('#ddlLogin').val()
+            if (nationality == "") {
+                $('#dvAadhaarNumber').hide();
+                $('#dvPassportNumber').hide();
+                $('#dvEmail').hide();
+                $('#dvMobile').hide();
+            }
+            else if (nationality == "email") {
+                $('#dvAadhaarNumber').hide();
+                $('#dvPassportNumber').hide();
+                $('#dvEmail').show();
+                $('#dvMobile').hide();
+            }
+            else if (nationality == "mobile") {
+                $('#dvAadhaarNumber').hide();
+                $('#dvPassportNumber').hide();
+                $('#dvEmail').hide();
+                $('#dvMobile').show();
+            }
+            else if (nationality == "aadhaar") {
+                $('#dvAadhaarNumber').show();
+                $('#dvPassportNumber').hide();
+                $('#dvEmail').hide();
+                $('#dvMobile').hide();
+            }
+            else if (nationality == "passport") {
+                $('#dvAadhaarNumber').hide();
+                $('#dvPassportNumber').show();
+                $('#dvEmail').hide();
+                $('#dvMobile').hide();
+            }
+            $('#txtAadhaarNumber').val('');
+            $('#txtPassportNumber').val('');
+            $('#txtEmail').val('');
+            $('#txtMobile').val('');
+        });
+
+    });
+</script>
+
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="main-footer" style="text-align: center;">
+            
+            <div style="font-family: Arial">
+                Developed and hosted by&nbsp;<b><a href="https://sppuedutech.com">SPPU Edutech Foundation </a></b>
+                <br />
+                <b>©<a href="http://www.unipune.ac.in/"> Savitribai Phule Pune University</a>.</b>
+            </div>
+            <div>
+                <a href="https://sppuedutech.com" target="_blank">
+                    <img alt="SEFLogo" title="SPPU Edutech Foundation" src="/SIM_APP/Content/Images/sef_logo1.png" style="height: 40px; width: 110px">
+                </a>
+                <a href="http://www.unipune.ac.in/" target="_blank">
+                    <img alt="SEFLogo" title="Savitribai Phule Pune University" src="/SIM_APP/Content/Images/SPPU_LOGO_black.png" style="height: 40px; width: 210px">
+                </a>
+            </div>
+        </footer>
+
+    </div>
+    <!-- ./wrapper -->
+
+</body>
+</html>
+

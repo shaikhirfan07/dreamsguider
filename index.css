@@ -1,0 +1,68 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(sk.jpg.jpg);
+    background-size:cover;
+}
+.manu{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    color:white;
+    font-size: large;
+   
+
+}
+.h2{
+    color: white;
+    font-family: cursive;
+}
+#contact
+{
+    border: solid;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    display: grid;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 25px;
+    border-color: aliceblue;
+    border-width: 2px;
+    margin: auto;
+    backdrop-filter: blur(30px);
+    
+
+    
+}
+.fot
+{
+     border:solid;
+     margin-top: 200px;
+     text-align: center;
+     font-size:25px;
+     color: white;
+
+
+}
+.log
+{
+    border-radius: 30px;
+    background-color: blue;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.log:hover {opacity: 1;}
+input{
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+
+
+}
+.l{
+    text-align: center;
+}
